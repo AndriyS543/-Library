@@ -5,7 +5,6 @@ const BookList = () => {
   const books = useSelector((state) => state.books);
   const dispatch = useDispatch();
   const handleDeleteBook = (id) => {
-    console.log(id);
     dispatch(deleteBook(id));
   };
   return (
