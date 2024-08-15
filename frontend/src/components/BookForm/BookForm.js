@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { v4 as uuidv4 } from 'uuid';
 import { useDispatch } from 'react-redux';
 import { addBook } from '../../redux/books/actionCreators';
 import './BookForm.css';
@@ -13,6 +14,7 @@ const BookForm = () => {
       const book = {
         title,
         author,
+        id: uuidv4(),
       };
 
       dispatch(addBook(book));
