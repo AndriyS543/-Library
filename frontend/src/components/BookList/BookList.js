@@ -1,7 +1,7 @@
 import { useSelector, useDispatch } from 'react-redux';
 import { MdOutlineFavorite, MdOutlineFavoriteBorder } from 'react-icons/md';
 import './BookList.css';
-import { deleteBook, toggleFavorite } from '../../redux/books/actionCreators';
+import { deleteBook, toggleFavorite } from '../../redux/slices/bookSlicer';
 import {
   selectTitleFilter,
   selectAuthorFilter,
